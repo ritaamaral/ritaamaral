@@ -1,0 +1,730 @@
+
+version: 0.2
+
+privacy: confidential
+
+doc_type: Study Protocol
+
+doc_status: Working Version
+
+doc_class: ObservationalStudyProtocolVersion3
+
+date: 7 Feb 2022
+
+sponsor: AstraZeneca
+
+client: AstraZeneca
+
+code: AVOIDEX_PT
+
+name: AVOIDEX-PT
+
+description: A real-world, observational, retrospective cohort study in patient with COPD to assess the impact of exacerbations and to describe the burden of disease by treatment group
+
+footer: MTG Research and Development Lab, 2022. All rights reserved.
+
+titlepage:
+  aux_line1: MTG Research and Development Lab
+  aux_line2: Magalhães & Taveira-Gomes Soc Médica LDA
+
+options:
+  report_support: true
+  report_resource_links: true
+  report_vocabularies: true
+  report_schema: true
+
+glossary:
+
+  - abbr: CDM
+    desc: Common Data Model
+
+  - abbr: COPD
+    desc: sphinx
+
+  - abbr: EHR
+    desc: Electronic Health Records
+
+  - abbr: EHDEN
+    desc: European Health Data and Evidence Network
+
+  - abbr: FDC
+    desc: Fixed Dose Combination
+
+  - abbr: GDPR
+    desc: EU General Data Protection Regulation
+
+  - abbr: GP
+    desc: General Practice
+
+  - abbr: HCRU
+    desc: Health Care Resource Use
+
+  - abbr: HR
+    desc: Hazard Ratio
+
+  - abbr: ICS
+    desc: Inhaled Corticosteroids
+
+  - abbr: LABA
+    desc: Long-acting β-2 Agonists
+
+  - abbr: LAMA
+    desc: Long-acting Anticholinergics
+
+  - abbr: SABDs
+    desc: Short-acting bronchodilators
+
+  - abbr: OHDSI
+    desc: Observational Healthcare Data Science Initiative
+
+  - abbr: OMOP
+    desc: Observational Medical Outcomes Partnership
+
+  - abbr: RWD
+    desc: Real-World Data
+
+  - abbr: ULSM
+    desc: Unidade Local de Saúde de Matosinhos
+
+
+
+
+responsible_parties:
+
+  - name: Paula Simão
+    title: MD
+    role: Principal Investigator
+    affiliation: |
+      Director of Pulmonology
+      Unidade Local de Saúde de Matosinhos
+      Matosinhos, Portugal
+    email: paula.simao@ulsm.min-saude.pt
+    is_main: false
+
+  - name: Tiago Taveira-Gomes
+    title: MD ME MSc PhD
+    role: Investigator
+    affiliation: |
+      Principal Scientist
+      MTG Research and Development Lab
+      Faculty of Medicine
+      University of Porto
+      Porto, Portugal
+    email: tiago.taveira@mtg.pt
+    is_main: true
+
+  - name: Cristina Jácome
+    title: MSc PhD
+    role: Medical Writing
+    affiliation: |
+      Medical Writing
+      MTG Research and Development Lab
+      Faculty of Medicine
+      University of Porto
+      Porto, Portugal
+    email: cristina.jacome@mtg.pt
+    is_main: false
+
+  - name: Carlos Amaral
+    title: MSc
+    role: Medical Scientific Excellence
+    affiliation: |
+      AstraZeneca
+      Barcarena, Portugal
+    email: carlos.amaral@astrazeneca.com
+    is_main: false
+
+  - name: Marisa Pardal
+    title: MSc
+    role: Evidence Generation
+    affiliation: |
+      AstraZeneca
+      Barcarena, Portugal
+    email: marisa.pardal@astrazeneca.com
+    is_main: false
+
+  - name: Filipa Bernardo
+    title: MSc
+    role: Head of Evidence Generation
+    affiliation: |
+      AstraZeneca
+      Barcarena, Portugal
+    email: filipa.bernardo@astrazeneca.com
+    is_main: false
+
+
+amendments:
+
+  - date: 22 Jan 2021
+    version: 0.1
+    changes: Development of study Design Concept
+    section: ""
+    reason: ""
+    revision: ""
+
+  - date: 7 Feb 2022
+    version: 0.2
+    changes: Implementation of SAP and Study definitions
+    section: ""
+    reason: ""
+    revision: ""
+
+
+milestones:
+
+- date: January 2021
+  milestone: Final protocol
+
+- date: September 2021
+  milestone: Development of databases
+
+- date: October 2021
+  milestone: EC approval
+
+- date: February 2022
+  milestone: Study Results
+
+- date: February 2022
+  milestone: Results analysis
+
+- date: April 2022
+  milestone: Data Publication
+
+
+background:
+
+  synopsis: |
+    Chronic obstructive pulmonary disease (:term:`COPD`) is a common, preventable and treatable disease that is characterized by persistent respiratory symptoms and airflow limitation that is due to airway and/or alveolar abnormalities usually caused by significant exposure to noxious particles or gases and influenced by host factors including abnormal lung development. Significant co-morbidities may have an impact on morbidity and mortality. :cite:t:`lopez2020global`
+
+  body: |
+    Chronic obstructive pulmonary disease (:term:`COPD`) is a common, preventable and treatable disease that is characterized by persistent respiratory symptoms and airflow limitation that is due to airway and/or alveolar abnormalities usually caused by significant exposure to noxious particles or gases and influenced by host factors including abnormal lung development. Significant co-morbidities may have an impact on morbidity and mortality. :cite:t:`lopez2020global`
+
+    :term:`COPD` prevalence, morbidity and mortality vary across countries and across different groups within countries. In Portugal, it is estimate a :term:`COPD` prevalence of 14,2 % in people aged 40 and over. In addition, a large proportion of underdiagnosed disease was detected. :cite:t:`barbara2013chronic`
+
+rationale:
+
+  synopsis: |
+    Currently, :term:`COPD` is the fourth leading cause of death in world but it is projected to be the third leading cause by 2020. More than 3 million people died of :term:`COPD` in 2012 accounting for 6% of all deaths globally. :term:`COPD` represents an important public health challenge that is both preventable and treatable. :term:`COPD` is a major cause of chronic morbidity and mortality throughout the world; many people suffer from this disease for years and died prematurely from it or its complications. Globally, the :term:`COPD` burden is projected to increase in coming decades because of continued exposure to :term:`COPD` risk factors and aging of the population. :cite:t:`lopez2020global`
+
+  body: |
+    Currently, :term:`COPD` is the fourth leading cause of death in world but it is projected to be the third leading cause by 2020. More than 3 million people died of :term:`COPD` in 2012 accounting for 6% of all deaths globally. :term:`COPD` represents an important public health challenge that is both preventable and treatable. :term:`COPD` is a major cause of chronic morbidity and mortality throughout the world; many people suffer from this disease for years and died prematurely from it or its complications. Globally, the :term:`COPD` burden is projected to increase in coming decades because of continued exposure to :term:`COPD` risk factors and aging of the population. :cite:t:`lopez2020global`
+
+    Between 30-50% of patients with :term:`COPD` experience at least one exacerbation of :term:`COPD` per year :cite:t:`hurst2010susceptibility`. Even a single moderate exacerbation increases risk of future multiple exacerbation events, starting a spiral of excessive disease progression and leading to an increased risk of death. :cite:t:`rothnie2018natural` :term:`COPD` exacerbation are defined as an acute worsening of respiratory symptoms that results in additional therapy. These events are classified as mild (treated with short acting bronchodilators (:term:`SABDs`) only), moderate (treated with :term:`SABDs` plus antibiotics and/or corticosteroids) or severe (patient requires hospitalization or visits to the emergency room). Severe exacerbation may also be associate with acute respiratory failure.
+
+objectives:
+
+  primary:
+
+    - description: To assess the consequences following moderate to severe :term:`COPD` exacerbations
+      sap:
+        - rubric: Outcome measure
+          body: |
+            Differences in outcomes between exacerbation groups during the follow-up time (until date of death, or end of follow-up, whichever occurs first, will be explored:
+
+            * Frequency and rate of moderate and severe exacerbations
+
+            * Co-morbidities
+
+            * Health care resource utilization
+
+            * All-cause and cause specific mortality
+
+        - rubric: Stratification
+          body: |
+            Patients will be categorized based on their baseline history of exacerbation:
+
+            * Category A: 0 exacerbations
+
+            * Category B: 1 moderate exacerbation
+
+            * Category C: 1 severe exacerbation
+
+            * Category D: ≥2 moderate and/or severe exacerbations
+
+
+  secondary:
+
+    - description: To describe the proportion and treatment patterns of patients in different treatment groups at baseline
+      sap:
+        - rubric: Outcome measure
+          body: |
+            * Proportion, characteristics and treatment patterns of patients
+
+
+    - description: To describe the burden of disease in different treatment groups
+      sap:
+        - rubric: Outcome measure
+          body: |
+            * Frequency and rate of moderate and severe exacerbations
+
+            * Describe the Healthcare Resource utilization (:term:`HCRU`) and costs in different treatment groups
+
+            * All-cause and cause specific mortality
+
+    - description: To assess the consequences following moderate and severe :term:`COPD` exacerbations split by severity (i.e. moderate or severe exacerbations)
+      sap:
+        - rubric: Outcome measure
+          body: |
+            Differences in outcomes between exacerbation groups during the follow-up time (until date of death, or end of follow-up, whichever occurs first, will be explored:
+
+            * Frequency and rate of moderate and severe exacerbations
+
+            * Co-morbidities
+
+            * Health care resource utilization
+
+            * All-cause and cause specific mortality
+
+        - rubric: Stratification
+          body: |
+            Patients will be categorized based on their baseline history of exacerbation:
+
+            * Category A: 0 exacerbations
+
+            * Category B: 1 moderate exacerbation
+
+            * Category C: 1 severe exacerbation
+
+            * Category D: ≥2 moderate and/or severe exacerbations
+
+  exploratory:
+
+    - description: Association of early vs delayed treatment after :term:`COPD` diagnosis with :term:`FDC` Triple and less resource utilization/cost-saving
+      sap:
+        - rubric: Outcome measure
+          body: |
+            * Frequency and rate of moderate and severe exacerbations
+
+            * Co-morbidities
+
+            * Health care resource utilization
+
+            * All-cause and cause specific mortality
+
+    - description: Associations of specific co-morbidities and exacerbations
+      sap: The objective of the exploratory analysis is to investigate timing of Fixed Dose Combination (:term:`FDC`) Triple (early vs. delayed) and the frequency and rate of exacerbations, co-morbidity, health care resource utilization, all-cause mortality and cause specific mortality.
+
+
+  out_of_scope: null
+
+
+study_design:
+
+  synopsis: This is a study using a descriptive cohort study design using secondary data sources from electronic medical records.
+
+  body: |
+    A real-world, retrospective, observational, longitudinal study, will be carried out on secondary data analyses of electronic health records (:term`EHR`) and health care register data in patients with :term:`COPD` in one Portuguese site - Unidade Local de Saúde de Matosinhos.
+
+    Patients with any record of a :term:`COPD` diagnosis at the age of 40 years or older between 1st January 2010 and 31st December 2018 will be included in the study  and followed until date of death, loss to follow up or end of study, whichever occurs first. Patients will be analyzed for clinical characteristics, :term:`COPD` exacerbations, :term:`COPD` treatments, :term:`HCRU` and mortality.
+
+    Index date will be the date of study entry, i.e. first record of a :term:`COPD` diagnosis during the observational period followed by a 1-year baseline period where exacerbation history will be captured, and treatment groups will be defined.
+
+
+
+data_sources:
+
+  synopsis: Data will be obtained from computerized medical records from Unidade Local de Saúde de Matosinhos, Porto, Portugal. The information on the origin of the data is confidential. All patients available meeting inclusion/exclusion criteria will be collected. All the data to be analysed in the study is already recorded in the database at this study start.
+
+  body:
+
+    - rubric: Time Period
+      body: |
+        The study period, when index events and outcomes of interest can be observed, will start from 1st January 1998 and end at the latest available date for all data sources in 31-21-2021 at the latest. Before the final extraction and analysis, data will be updated as frequently as possible, in collaboration with the study partner. The results will not be refreshed after the last data extraction, which will take place on the **26th February 2022**, at the latest.
+
+    - rubric: Data Standardization
+      body: |
+        The study will be conducted using data from a single :term:`RWD` sources. An optional *adhoc* data schema has been defined that allows automated execution of all data transformations uniformly across databases. The mapping may optionally be ported from :term:`OMOP` :term:`CDM` version 5.4.1, maintained by the :term:`OHDSI` and :term:`EHDEN` initiatives.
+
+        Each cohort and subgroup will be defined in a separate setting based on the data source type, and will be described at the index dates of interest of accordingly. The follow up will take place in the same setting and switch of setting (hospitalization for ambulatory cohorts or discharge for hospital cohorts).
+
+  databases:
+    - name: ULSM
+      country: Portugal
+      lock_points: 17 Jan 2021
+      description: |
+        This study has been designed for :term:`ULSM`. :term:`ULSM` covers is a public healthcare provider in northern Portugal that serves the urban population of *Matosinhos* which is around 175.000 people. :term:`ULSM` has 1 hospital and 14 primary care centers in the region. In addition :term:`ULSM` also receives patients from other geographies and institutions to provide specific care needs. :term:`ULSM` has over 20 years worth of EHR data containing complete information for every patient encounter that ever occurred.
+
+        For the purpose of this work, we are interested exclusively in the resident population served by ULSM. For that, we exclude patients that are not frequent users of their primary care facilities. This is because Portugal all persons should have at least one primary care visit every 3 years, otherwise they loose their family doctor. This is directly commissioned by the health ministry to all primary care centers in the main land Portugal.
+
+        The database contains the full records of:
+
+        * GP visits
+
+        * Emergency care
+
+        * Prescription data
+
+        * Hospital admissions
+
+        * Working day lost and disability data
+
+        * Death
+
+study_population:
+
+  synopsis: The full adult population
+
+  body:
+
+    - rubric: Incident population
+      body: |
+        Patients with no :term:`COPD` (J44 diagnosis code in primary or secondary care) in the 5 years prior to index date will be included in the incident population sub-group, assuming that the :term:`COPD` exacerbation at index date is the first :term:`COPD` event.
+
+        The rationale for focusing some analyses on an incident population is, that risk of exacerbations is time-dependent with decreasing time-intervals between exacerbation as the disease progress. Using an incident cohort enables more valid comparisons as patients are compared at the same time points in their disease course.
+
+    - rubric: Prevalent population
+      body: |
+        Patients with any :term:`COPD` diagnosis code (J44 diagnosis code in primary or secondary care) prior to index date (defined as the first :term:`COPD` diagnosis record after January 1st, 2010) will be included in the prevalent population sub-group.
+
+
+
+inclusion_criteria:
+
+  body: |
+    These criteria are considered by default throughout all analysis. At the index date of a given cohort in any analysis the following must hold TRUE:
+
+    * The patient is alive
+
+    * The patient is 18 years or older
+
+    * The patient has at least 1 clinical record in the past 365 days
+
+    * The patient has had least 1 appointment with a primary care physician in the last 3 years
+
+    In addition to these, specific criteria will be also defined to derive the exact patient cohorts for each analysis.
+
+
+exclusion_criteria:
+
+  body: |
+    These criteria are considered by default for throughout all analysis. At the index date of a given cohort in any analysis the following must hold TRUE:
+
+    * Sex is missing
+
+    * Age cannot be computed
+
+
+followup:
+
+  body: |
+    Relevant index date definitions will be applied as appropriate for each objective.
+
+    Follow up for all patients will begin from the index date until they experience the outcome of interest (endpoint, depending on the objective) or until cohort exit (date of censoring). The patients will be followed up for maximum 10 years or until censoring occurs, censoring criteria are:
+
+    * Death
+
+    * Patient exit from the :term:`GP` practice
+
+    * End of the databases data collection
+
+    * End of study period (latest data cut-off)
+
+    The look back window for evaluating risk factors, medical history is 365 days and will be applied to all cohorts
+
+
+variables:
+
+  synopsis: |
+    Baseline variables will be described for the baseline year overall and split by prevalent / incident populations. The exact variables are specified in the :ref:`definitions` Appendix, and the exact study definitions to consider in each situation are presented in :ref:`analysis`.
+
+  body:
+
+    - rubric: General Considerations
+      body: |
+        Baseline variables will be described for the baseline year overall and split by prevalent /
+        incident populations.
+
+        Each variable definition will be based on standard concepts in standardized :ref:`vocabularies`. Variables will be identified using pre-specified concept sets reviewed by a core team of clinicians, epidemiologists, vocabulary experts, and health data scientists with extensive expertise in medical terminologies. Some of the codes used and validated before will be reused in this project.
+
+        The core vocabularies used in defining concepts are ICD9-CM, ICD10-CM, ICPC-2, ATC and UMLS CUI codes. The exact variables are specified in the :ref:`definitions` Appendix, and the exact study definitions to consider in each situation are presented in :ref:`analysis`.
+
+    - rubric: Socio-demographic and comorbidity variables
+      body: |
+        The time window for capture of baseline data is the 1-year prior to index. For drug therapy, the last prescription during the 1-year prior to index will be used.
+
+        The following baseline variables will be described for the baseline year, if available.
+
+        * **Baseline variables**
+
+          * Age (continuous on the index date and by ranges),
+
+          * Sex,
+
+          * FEV1/FVC percent of predicted (mean [SD]), FEV1/FVC percent of predicted (number)
+
+          * Eosinophils (mean[SD]), eosinophils (number), eosinophils (number  [%], <150 cells/µL, ≥150 and <300 cells/µL, ≥300 and <450 cells/µL and ≥450 cells/µL)
+          BMI (mean [SD]).
+
+        * **Baseline medication??
+
+          * Systemic corticosteroids (ATC code H02AB, n [%]),
+
+          * LAMA (R03BB01) or LABA (R03AC12 and R03AC13) mono therapy (n [%]),
+
+          * Combinations of LABA + LAMA (n [%]),
+
+          * Combinations of ICS (ATC code R03BA) + LABA or ICS + LAMA ( n [%]),
+
+          * Combinations ICS + LABA + LAMA (n [%])
+
+          * Other :term:`COPD` treatments.
+
+        * **Other co-morbid conditions**: Pneumonia (ICD-10; J18, number [%]), Asthma (ICD-10; J45, number [%]), Osteoporosis (ICD-10: M80-81, n [%]),  Diabetes (ATC code A10B), n [%]), Ischaemic heart disease (ICD-10: I20-I25, n [%]), Peripheral Artery Disease (ICD-10: I70.0, I70.2, I73.9, n [%]), Stroke (ICD-10: I61-I64, n [%]), Atrial fibrillation (ICD-10: I48, n [%]), Heart failure (ICD-10: I50, n [%]), Dementia (ICD-10: F00-03, n [%]),  Malignant neoplasm (ICD-10: C00-C97, n [%]), Depression and Anxiety (ICD-10: F32, F41, n [%]).
+
+
+    - rubric: :term:`COPD`-related variables
+      body: |
+        Exacerbations will be defined as the occurrence of hospitalizations, ER visits, claims for courses of OCS and/or respiratory antibiotics. If more than one of these occur within a 2-week window, this will be calculated as one exacerbation.
+
+        A moderate exacerbation will be defined as claim of OCS (ATC code H02AB) or respiratory antibiotics (ATC code J01AA, J01CA)
+
+        A severe exacerbation will be defined as ICD-10-CM code J44 as primary diagnosis or J44.0/J44.1 as secondary diagnosis or emergency visits (ICD-10-CM code J44.0/J44.1 in outpatient hospital care).
+
+        Exacerbations categorization (during the baseline year and during the observation period):
+
+        * Category A: 0 exacerbations
+
+        * Category B: 1 moderate exacerbation (ATC code H02AB) or antibiotics (ATC code J01AA, J01CA)
+
+        * Category C: 1 severe exacerbation. Hospitalizations (ICD-10-CM code J44 as primary diagnosis or J44.0/J44.1 as secondary diagnosis) or emergency visits (ICD-10-CM code J44.0/J44.1 in outpatient hospital care)
+
+        * Category D: ≥2 moderate and/or ≥2 severe exacerbations
+
+    - rubric: Resource use and costs
+      body: |
+        Health care resource use will be reported as total number of contacts, i.e. hospitalizations including length of stay (as available in data source), procedures and outpatient care visits to specialized care and primary care per year, :term:`COPD`-related and non-:term:`COPD` related.
+
+        Per-patient mean healthcare costs per year will be estimated by applying unit costs to the corresponding resource use items. Costs will be reported as total healthcare costs including hospitalization costs, emergency department costs, outpatient or primary care costs, costs for medications. :term:`COPD` related and non-:term:`COPD`  related.
+
+        The analyses will be stratified into groups of interest: age, gender, :term:`COPD` severity, :term:`COPD` therapy, co-morbidity burden and exacerbation pattern.
+
+
+exposures:
+
+  synopsis: Exposures consist in :term:`COPD` development and progression into each of the exacerbation categories.
+
+  body: |
+    Exposures consist in :term:`COPD` development and progression into each of the exacerbation categories.
+
+    * Category A: 0 exacerbations
+
+    * Category B: 1 moderate exacerbation
+
+    * Category C: 1 severe exacerbation
+
+    * Category D: ≥2 moderate and/or severe exacerbations
+
+  primary: Onset :term:`COPD` development and onset stage progression
+
+  secondary: No secondary exposures are been defined
+
+
+
+outcomes:
+
+  synopsis: Frequency and rate of moderate and severe exacerbations; Lung function; Co-morbidities; Health care resource utilization; All-cause and cause specific mortality
+
+
+  body: |
+    * Frequency and rate of moderate and severe exacerbations
+
+    * Lung function
+
+    * Co-morbidities
+
+    * Health care resource utilization
+
+    * All-cause and cause specific mortality
+
+
+other_variables:
+
+  body: The complete set of variables is exactly defined in :ref:`definitions`
+
+
+sap:
+
+  synopsis: |
+    Continuous variables will be described using mean, standard deviation, median, first and third quartiles, minimum, and maximum. Categorical variables will be described by the number and percentage of patients in each category. Patterns of missingness will be reported and 95% confidence Intervals will be presented. Modelling will be done with resort to survival analysis with multiple outcomes and time-varying co-variates.
+
+  general_aspects:
+
+    - rubric: Summary Statistics
+      body: Continuous variables will be described using mean, standard deviation, median, first and third quartiles, minimum, and maximum. Categorical variables will be described by the number and percentage of patients in each category. The number of patients with missing data for each variable will be reported. Confidence Intervals of 95% will be presented for means using a normal approximation and for proportions using a binomial approximation. Only available data will be summarized.
+
+    - rubric: General Statistical Modelling
+      body: |
+
+        The analyses and results will be descriptive in nature.
+
+        All baseline characteristics will be described in relation to the index date. All categorical variables will be summarized with absolute and relative frequencies. Differences in baseline characteristics of patients will be calculated using Chi-squared tests and Student's test, as appropriate.
+
+        In all regression analyses, guidelines for appropriate fitting of any logistic or Cox regression model recommend a minimum of 10 outcome events per term (where term may be any linear co-variate, nonlinear predictor, or interaction term).
+
+        If sensitivity analyses are to be conducted, fully adjusted regression analysis will only be undertaken if sufficient outcome events are observed.
+
+        Additionally, in all analyses where Cox regression modelling is used, the :term:`HR` can be used to represent the incidence rate. The results for each country and database will be presented separately.
+
+    - rubric: Detailed Statistical Modelling
+      body: |
+
+        Contingency tables presenting prevalence proportions with 95% confidence intervals of the different categorical outcomes of interest among different :term:`COPD` treatments (e.g., % treated with different :term:`COPD` treatments, % who shift :term:`COPD` treatment type, % who stop :term:`COPD` treatment) will be created. These descriptive analyses will be conducted among :term:`COPD` treated overall and stratified, by different patient characteristics (e.g., according to :term:`COPD` category A, B C and D, type of :term:`COPD` therapy, age group, gender, co-morbidities).
+
+        Start of follow-up will be the day after index day and end of follow-up will be at death or end of study, whichever occur later.
+
+        Occurrence of exacerbations will be presented as n (%) and rate per/100PY (95% CI). Cumulative risk of :term:`COPD` exacerbation and cause-specific mortality will be assessed using Fine-Gray regression accounting for competing risks of death :cite:t:`burge2000randomised,calverley2007salmeterol`. In addition, the mean cumulative count of exacerbations will be used to investigate the total number of exacerbations, accounting for competing risks of death :cite:t:`o2010management`. For cumulative risk of overall death Kaplan-Meier estimates will be applied. :term:`COPD` exacerbations outcomes and components will be described overall and in selected strata including age (<65, 65-75, >75), :term:`COPD` category, and :term:`COPD` therapy. Mortality and cause specific mortality will be described overall and stratified by age (<65, 65-75, >75), :term:`COPD` category, and :term:`COPD` therapy.
+
+        To estimate time until 25%, 50% and 75% of the patients have experienced an exacerbation during follow-up Fine-Gray regression :cite:t:`fine1999proportional` accounting for competing risk of death will be applied.
+
+        A multiple (multivariable) Cox proportional hazards model will be used to evaluate the association of baseline co-variates (including risk factors) with overall mortality during follow-up. To evaluate the association of baseline co-variates (including risk factors) with exacerbation and cause-specific mortality Fine-Gray regression :cite:t:`o2010management`, accounting for competing risk of death, will be applied. The initial model will include all relevant baseline variables (in particular known risk factors) and important interactions. The underlying timescale will be time since index date.
+
+        Possible effect modification will be investigated by including relevant interaction terms in the model and tested by likelihood ratio tests against a simpler nested model not including the interaction term. If effect modification can be proven, its effect will be described applying appropriate contrasts or subgroup analysis. Study-specific risk estimates (hazard ratios) will be pooled across the study populations through a fixed effects inverse variance meta-analysis.
+
+
+    - rubric: Exploratory Analysis
+      body: |
+        An initial exploratory descriptive analysis will be conducted for each cohort post data extraction to provide insight into general patterns, functional form and any outliers of exposure and co-variates. These initial data will be further summarized using descriptive statistics as outlined in the previous section. Additionally, variable distribution will be explored visually using bar charts, box plots or histograms where relevant.
+
+        From the study population, cohorts will be created as detailed in the :ref:`analysis` appendix. The proportion and summary characteristics of patients excluded from each sub-cohort analysis will be summarized in a `STROBE <https://www.strobe-statement.org>`__ diagram.
+
+    - rubric: Sensitivity analysis
+      body: |
+        * patients with OCS treated co-morbidities will be excluded where possible: Crohn's disease (K50), Ulcerative colitis (K51), Rheumatoid arthritis (M05), Emphysema (J43), Chronic obstructive pulmonary disease (J44), Bronchiectasis (J47), Cystic fibrosis (E84), any malignancy (C00-C99), Polymyalgia rheumatica (M35.3) - any record of these diagnoses ever before in the available data up until baseline date (baseline period included).
+
+        * Inclusion period (1st January 2010 to 31st December 2018) extension/reduction, if the source database allows.
+
+        * Triple therapy split by fixed dose combination or open dose
+
+        * :term:`COPD` diagnosis, redefined as only patients with a confirmed diagnosis (i.e. pulmonary function test, smoking, etc.)
+
+
+
+    - rubric: Index dates
+      body: |
+        Analysis will be performed at the following prevalent index dates:
+
+        * 31-12-2018
+
+        * 31-12-2019
+
+        * 31-12-2020
+
+        In addition all analysis will be also performed at exposure date
+
+  methods_to_minimize_bias: |
+    In the analyses of the prevalent :term:`COPD` cohort there is a risk of selection bias as patients are not included in the study if they die within their first or second :term:`COPD` exacerbation.
+
+    Although adjustment and stratification will be performed for several baseline characteristics our results may suffer from residual confounding, either due to incomplete adjustment or confounding by unknown/unmeasured characteristics.
+
+    This study has a limited number of exclusion criteria to minimize risk of selection bias. Furthermore modelling will employ survival methods with multiple outcomes and time-varying co-variates to account for competing risks and time varian hazards. Finally, potential propensity score matching, if applied, will help reduce bias by comparing effects between groups with similar clinical characteristics.
+
+  adjustment_for_multiple_comparisons: |
+    In general, a significance level of 5% will be applied and is thus defining the Type I error of single end-point analysis. However, as this study is descriptive and not hypothesis testing, no adjustment for multiple comparisons will be made.
+
+strengths_and_limitations:
+
+  body:
+
+    - rubric: Selection bias
+      body: |
+        Selection bias occurs when there is a selective recruitment into the study of subjects that are not representative of the population intended to be studied, so that the association between exposure and outcome of interest is different in the included and excluded population.
+
+        * **Mitigation**: Minimal exclusion criteria will be used. In addition, we have included data sources with large or whole national coverage and both primary and secondary setting.
+
+    - rubric: Linkage between primary and secondary care
+      body: |
+        Data is fully linked and as such this is not a limitation
+
+    - rubric: Primary care databases
+      body: |
+        Data includes the full records of public primary care centers in the region
+
+    - rubric: Hospital setting databases
+      body: |
+        Data includes the full records of public hospital care centers in the region
+
+    - rubric: Mortality data
+      body: |
+        The mortality information is fully captured
+
+    - rubric: Follow-up time
+      body: |
+        Follow-up time is consistent and without fragmentation
+
+    - rubric: :term:`ULSM` Portugal Specific limitations
+      body: |
+        All analysis done exclusively over retrospective observation data which limits causal inference
+
+        * **Mitigation** - The quality of evidence is dependent on the quality of collected data. :term:`ULSM` data is complete population-wise and contains all encounters that ever occurred in that region, so we expect data to very high quality and representative of the full population of this region and of other urban regions in Portugal.
+
+        * **Mitigation** - The depth of data containing that is rich in primary care records, the easy access to the family doctor and the commissioned primary care indicators, increase the likelihood of finding higher prevalence and incidences of early stage forms of many diseases, and inversely lower prevalence and incidences of early stage forms of the same diseases. This should be taken into consideration when comparing results from other studies with secondary centers, or prospective cohorts of preselected patients, that are more likely to be richer in disease.
+
+        Imaging and procedure data is not available which may cause under-representation of cohorts and outcomes whose definitions rely in this type of data. In those cases, lower prevalence and under-estimation of risk are likely.
+
+
+interim_analysis:
+
+  body: Multiple interim analysis will be performed during the month of February 2022. After data lock at the end of February, analysis will be run over the locked data and final results obtained.
+
+
+sample_size:
+
+  synopsis: No formal sample size estimates will be conducted.
+
+  body: |
+    Based on database characterization conducted prior to this protocol, the database use has a raw estimate between 120.000 living adult patients in 2019, and a total of 250.000 patients.
+
+    As the objectives are mostly descriptive one, the aim is to observe a sufficient number of patients in order to estimate the prevalence of groups and subgroups, and the frequency of clinical characteristics with an acceptable level of precision. The 95% CI will provide an indication of precisions of the point estimate; the upper and lower limit will provide a range of credible values consistent with observed data.
+
+    No formal sample size estimates will be conducted.
+
+
+flowchart_and_plan:
+
+  body: The study will be conducted through the development of analytic programs that will be run at the location where the data is located. These programs will be developed and upgraded until close to the project close date. By the end of February the database will be locked and by the end of March the analysis scripts will be locked. Data and analysis will be considered final by then.
+
+
+procedures:
+
+  body:
+
+    - rubric: Data Management
+      body: |
+        Data management for this study will be conducted using standard MTG processes. Further details on the data handling procedures will be provided in appropriate documents. The process would take into consideration any data governance imposed on the data source including any plans to handle the data outside of the institution or country of origin. MTG will adhere to all local and regional laws on data protection and privacy.
+
+        Apache Spark, Python and R will be used for data management and statistical analysis, including the procedures for data collection, retrieval and preparation. The methods and tools for data collection will be electronic. The ownership of the databases will remain the property of the participating site. However, all results of the investigation will be the property of the Sponsor. This is a secondary data study and all data are already in the database.
+
+        We propose that data is fully processed at the study site. For this purpose we suggest the deployment of a bare-metal server segregated in a separate subnetwork and without access to the internet except for remote SSH connections from trusted IPs and with adequate RSA keys and relevant trusted package repositories (PIP, CRAN, APT-GET, Docker Registry, among others). This server will host the raw data dumps from the venue EHR systems and all data analysis scripts, which will be developed remotely and loaded into this server to process the results.
+
+        For data processing script development, we propose that a short synthetic test dataset is developed from the original data in order to serve as a mock. This short dataset will preserve all the relevant schema structure and original variable distributions. However, data will be obtained from empirical sampling of the original dataset, thus constructing a synthetic dataset that does not correspond to any real patient and thus is not considered personal data.
+
+        Unstructured data from progress and discharge notes will be tokenized using natural language processing tools, semi-automatically translated and mapped to SNOMED-CT Concepts via SNOMED terms.
+
+
+quality_control:
+
+  body: |
+
+    At the study level, all aspects of the study from protocol development to the reporting of the results are conducted within the work-frame of MTG quality management system.
+
+    A Quality Control plan for the study will be developed and executed, which will include quality control on study methodology, statistical analysis plan, programming, data management and analysis, study results, conclusions and study report.
+
+    The study Quality Control plan will establish ownership for the execution of the individual Quality Control steps. The principle of the independence of Quality Control applies The Principal-in-Charge of the study will ensure that individuals responsible for the execution of specific Quality Control steps will have knowledge, capability and experience which are adequate for the task.
+
+    The result of the execution of the individual steps of the Quality Control plan will be documented, and include the required corrective actions, if any. The execution of any required corrective action will be documented. The executed Quality Control plan will be subjected to a final review and approval for sufficiency and completeness from the Principal-in-Charge of the study.
+
+    We will also perform negative control assessment for empirical P cut-off determination by estimating effect on outcomes that are not known to be related with :term:`COPD` (fungal infection of skin and nails).
+
+
+protection_of_human_subjects:
+
+  body: |
+    For this study a EU member state will process personal data from individuals which is collected in a regional electronic health record database. Due to the sensitive nature of this personal medical data, it is important to be fully aware of ethical and regulatory aspects and to strive to take all reasonable measures to ensure compliance with ethical and regulatory issues on privacy.
+
+    All the databases used in this study are already used for pharmaco-epidemiological research and have a well-developed mechanism to ensure that European and local regulations dealing with ethical use of the data and adequate privacy control are adhered to.
+
+    In agreement with these regulations, rather than combining person level data and performing only a central analysis, local analyses will be run, which generate non-identifiable aggregate summary results. The output files will not contain any data that allow identification of subjects included in the study. MTG has an internal set of rules and processes associated with Data quality assurance.
+
+    Patient confidentiality will be protected according to the EU General Data Protection Regulation (:term:`GDPR`) on the protection of individuals. Security of the data will be maintained at all times.
+
+    Access will be limited to authorized individuals. In addition there will be no processing of data outside the physical facilities where the database is located.
